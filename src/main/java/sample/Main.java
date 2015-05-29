@@ -68,6 +68,10 @@ public class Main extends Application {
         startAnimationBtn.setLayoutX(10);
         startAnimationBtn.setLayoutY(10);
         startAnimationBtn.setOnMouseClicked(e -> {
+            if(circles.isEmpty()) {
+                return;
+            }
+
             circles.forEach((x, y) -> {
                 if (x == start) {
                     y.setFill(Color.GREEN);
@@ -245,7 +249,7 @@ public class Main extends Application {
                 }));
             });
 
-            duration[0]++;
+            duration[0]+=3;
         }
 
         animation.setAutoReverse(false);
