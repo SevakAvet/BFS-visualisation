@@ -44,3 +44,5 @@ pos 14 370 370
 * **start x** - define starting vertex
 * **a [b, c... z]** - list of a's neighbours
 * **pos v x y** - 2D-position of vertex **v**
+
+![Imgur](http://i.imgur.com/JdLTOhk.gifv)
